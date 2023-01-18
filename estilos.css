@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(255, 255, 239);
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.contenedor .izq{
+    position: relative;
+    background: rgba(172, 129, 230, 0.712);
+    padding: 40px; 
+}
+
+.textoper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+.textoper .foto{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+
+}
+
+.textoper .foto img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.textoper h2{
+    color: rgb(85, 85, 85);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.textoper h2 span{
+    font-size: 0.8em;
+     font-weight: 300;
+}
+
+.contact{
+  padding-top: 40px;
+
+}
+
+.titulo{
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contact ul{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contact ul .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+
+}
+
+.contact ul .texto{
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+}
+.education{
+    padding-top: 20px;
+  
+  }
+
+ul {
+    list-style: none;
+}
+  
+.education li{
+    margin-bottom: 15px;   
+}
+
+.education h5{
+    color: rgb(85, 85, 85);
+    font-weight: 300;
+}
+
+.education h4:nth-child(2){
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+}
+
+.education h4{
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+}
+
+.lenguaje{
+    padding-top: 20px;
+  
+  }
+
+  .lenguaje .text{
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+}
+
+  .lenguaje .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(85, 85, 85);
+    display: block;
+    margin-top: 5px;
+}
+
+.lenguaje .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white
+
+}
+
+.contenedor .der{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px; 
+}
+
+.acerca{
+    margin-bottom: 50px;
+}
+
+.acerca:last-child{
+    margin-bottom: 0;
+}
+
+.titulo2{
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px; 
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+
+.titulo3{
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px; 
+}
+
+.acerca .box{
+    display: flex;
+    flex-direction:row;
+    margin: 20px 0;
+}
+
+.acerca .box .añocomp{
+    min-width: 150px; 
+}
+
+.acerca .box .añocomp h5{
+    text-transform: uppercase;
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+}
+
+.acerca .box .text h4{
+    text-transform: uppercase;
+    color: rgb(172, 129, 230, 0.712);
+    font-size: 16px;
+}
+
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+}
+
+.skills .box  .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(85, 85, 85);
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(172, 129, 230, 0.712);
+
+}
+
+
+
+.red ul {
+   display: grid;
+   grid-template-columns: repeat(5,2fr);
+}
+
+.red ul .fa{
+    
+    color: rgb(172, 129, 230, 0.712);
+    font-size: 40px;
+    width: 20px;
+}
+
+@media (max-width: 1000px){
+   .contenedor{
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr);
+
+   } 
+   .red {
+    grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media (max-width: 600px){
+    .acerca .box{
+      flex-direction: column;  
+    }
+    .acerca .box .añocomp{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.textoper .foto {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
